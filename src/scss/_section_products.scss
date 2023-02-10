@@ -1,0 +1,78 @@
+.prodacts__cards {
+	margin-bottom: 50px;
+	position: relative;
+}
+
+.prodacts__title {
+	margin-bottom: 50px;
+}
+
+.prodacts__card { 
+	position: relative;
+	padding: 20px 10px; 
+	margin: 0 10px; 
+	border: 1px solid $brownLight;
+	@include transition(0.9s);
+
+	&:hover {
+		border: 1px solid $tomatoLight;
+	}
+
+	.status { 
+		position: absolute;
+		top: 0;
+		left: 0; 
+		display: block;
+		@include font(500, 10px, 12px);
+		text-transform: uppercase;
+		padding: 4px 5.5px;
+	}
+
+	.in_stock {
+		background-color: $tomatoLight;
+		color: $brownLight;
+	}
+
+	.sold {
+		background-color: $brownLight;
+		color: $black;
+	}
+
+	.img_wrapper {
+		position: relative;
+		max-width: 300px;
+		width: 100%; 
+		margin: 0 auto 10px auto;
+	
+		&::before {
+			content: '';
+			display: block;
+			padding-top: 147%;
+		}
+	}
+
+	.product__description {
+		margin-bottom: 10px;
+		text-align: center;
+		text-transform: capitalize;
+		@include font(600, 16px, 20px);
+		color: $black;
+	}
+
+	.product__price {
+		text-align: center;
+		@include font(700, 24px, 29px);
+		color: $black;
+	}
+}
+
+.prodacts .view_more__btn {
+	border: 2px solid $black; 
+    color: $black;
+    @include transition(.9s);
+
+	&:hover {
+		border: 2px solid $tomatoLight; 
+        color: $brownLight;
+	}
+}

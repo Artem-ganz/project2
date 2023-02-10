@@ -1,0 +1,14 @@
+{
+    "name": "Guitars",
+    "short_name": "Guitars",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ecb67f",
+    "background_color": "#ecb67f",
+    "display": "standalone"
+}

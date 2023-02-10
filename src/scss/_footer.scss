@@ -1,0 +1,120 @@
+.footer {
+
+	.footer__container {
+		color: $brownLight;
+		background-color: $brownDark;
+		padding: 70px 130px 20px 130px;
+		max-width: 1400px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.footer__logo, .logo_light { 
+		max-width: 150px;
+		max-height: 30px;
+		align-self: start;
+	}
+
+	.footer__logo {
+		margin-bottom: 35px;
+	}
+
+	.footer__nav {
+		@extend %flex;
+		margin-bottom: 50px;
+	}
+
+	.nav {
+		display: flex;
+		flex-direction: column;
+		max-width: 150px;
+	}
+
+	.footer__menu { 
+		.menu__item {
+			@include font(500, 20px, 24px);
+			text-transform: capitalize; 
+			margin-bottom: 10px;
+		}
+
+        .menu__link {
+            color: #fff;
+            @include transition(0.9s);
+
+            &:hover,
+			&.active {
+				color: $tomatoLight; 
+			}
+        }
+	}
+
+	.contacts {
+		@include font(500, 26px, 32px);
+
+		.contacts__title {
+			margin-bottom: 50px;
+		}
+
+		.socials {
+			@extend %flex;
+			margin-bottom: 30px;
+		}
+
+        .icons_social {
+            cursor: pointer;
+            @include transition(.8s);
+            font-size: 30px;
+            color: $brownLight;
+
+            &:hover {
+                color: $tomatoLight;
+            }
+        }
+
+		.tel {
+            color: $brownLight;
+			@include transition(0.8s);
+		}
+
+		.social_item:hover, .tel:hover {
+			color: $tomatoLight;
+		}
+	}
+
+	.copy {
+		width: fit-content;
+		margin: 0 auto;
+		@include font(500, 14px, 17px);
+	}
+}
+
+
+
+.top {
+	position: fixed;
+	bottom: 25px;
+	background-color: #2C4058;
+	border-radius: 10em;
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 26px;
+	width: 50px;
+	height: 50px;
+	line-height: 56px;
+	text-align: center;
+	cursor: pointer;
+	-webkit-transition: all 0.8s ease;
+	-o-transition: all 0.8s ease;
+	transition: all 0.8s ease;
+	right: -100px;
+	z-index: 2;
+	opacity: 0.6;
+  }
+  .top.active {
+	right: 30px;
+  }
+  .top:hover {
+	color: #fff;
+	background-color: #2C4058;
+	opacity: 1;
+  }
+  
